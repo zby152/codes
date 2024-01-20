@@ -1,0 +1,26 @@
+MarkBench - Bench Report - Sat Nov 25 13.24.19 2023
+
+MS name            : Blind linear correlation technique - V demo
+MS release date    : June 2000 - Last update: February 2002
+MS contact address : fabienpe@microsoft.com
+MS source location : http://www.cl.cam.ac.uk/~fapp2/watermarking/evaluation/
+MS family type     : 6
+MS max key size    : 32
+MS max msg size    : 0
+
+
+
+
+
+---------------------------------------------------
+Test_MedianCut -- Sat Nov 25 13.24.19 2023
+---------------------------------------------------
+Test_MedianCut	3	Images/Set1/lenna-waved	Certainty	126.771	29.6597 dB	
+Test_MedianCut	5	Images/Set1/lenna-waved	Certainty	125.601	27.5117 dB	
+Test_MedianCut	7	Images/Set1/lenna-waved	Certainty	125.172	25.4257 dB	
+Test_MedianCut	9	Images/Set1/lenna-waved	Certainty	124.961	23.807 dB	
+
+
+
+MarkBench - Bench Results  - Sat Nov 25 13.24.20 2023
+Number of tests which failed:0
