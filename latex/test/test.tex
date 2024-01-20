@@ -1,0 +1,290 @@
+\documentclass[onecolumn]{article} % article 文档类型
+
+\usepackage[UTF8]{ctex}  % 使用宏包(为了能够显示汉字)
+
+%字体颜色宏包
+\usepackage{color,xcolor} 
+% 预先定义好的颜色： red, green, blue, white, black, yellow, gray, darkgray, lightgray, brown, cyan, lime, magenta, olive, orange, pink, purple, teal, violet
+%自定义颜色
+\definecolor{light-gray}{gray}{0.95}    %灰度
+\definecolor{orange}{rgb}{1,0.5,0}      %rgb
+\definecolor{orange}{RGB}{255,127,0}    %RGB
+\definecolor{orange}{HTML}{FF7F00}      %HTML 
+\definecolor{orange}{cmyk}{0,0.5,1,0}   %cmyk
+
+%全局取消首行缩进
+\usepackage{indentfirst}
+\setlength{\parindent}{0pt}
+
+% 设置页面的环境,a4纸张大小，左右上下边距信息
+\usepackage[a4paper,left=10mm,right=10mm,top=15mm,bottom=15mm]{geometry}
+
+%设置文章标题
+\title{LaTex的测试样例}  % 文章标题
+\author{赵伯俣}   % 作者的名称
+\date{\today}       % 当天日期
+
+%链接宏包
+\usepackage{url}
+\usepackage{hyperref}
+
+%改变超级链接的颜色
+\hypersetup{colorlinks=true,
+            linkcolor=blue,
+            filecolor=blue,
+            urlcolor=blue,
+            citecolor=cyan,
+}
+
+%插入图片的宏包
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+%表格内换行宏包
+\usepackage{makecell}
+
+%定义example的样式
+\newtheorem{example}{Example}[section]
+
+%代码块宏包
+\usepackage{listings}
+
+%代码块的设置
+\lstset{
+    basicstyle=\footnotesize,  %设置整体的字体大小
+    numberstyle=\footnotesize\color{darkgray},    %设置行号格式
+    backgroundcolor=\color{white},     %设置背景颜色
+    keywordstyle=\color{blue},    %设置关键字颜色
+    commentstyle=\it\color[RGB]{0,100,0},   %设置代码注释的格式
+    stringstyle=\sl\color{red},    %设置字符串格式
+    numbers=left,    %在左侧显示行号
+    showstringspaces=false,    %不显示字符串中的空格
+    frame=single,     %设置代码块边框
+}
+
+%引用宏包
+\usepackage{amsmath}
+
+% 正文开始
+\begin{document}
+
+%设置背景色
+\pagecolor{gray}
+
+% 添加这一句才能够显示标题等信息
+\maketitle     
+
+%换行换段
+换行\\[2pt]
+换段\par
+
+% 目录
+\renewcommand{\contentsname}{目录} %将content转为目录
+\tableofcontents     
+
+\newpage
+%摘要
+\begin{abstract}
+该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。
+\end{abstract}
+
+\newpage
+%标题
+\section{一级标题}
+\subsection{二级标题}
+\subsubsection{三级标题}
+
+%新页
+\newpage
+
+%首行缩进
+\hspace*{2em}{段落的首行缩进段落的首行缩进段落的首行缩进段落的首行缩进段落的首行缩进段落的首行缩进段落的首行缩进段落的首行缩进段落的首行缩进}\\
+
+%下划线
+a\_b\\
+a\textunderscore b\\
+
+%注释
+\iffalse
+注释内容
+\fi
+
+%英文单双引号
+`English'
+``English"\\
+
+%空格
+ab 没有空格\\[4pt] 
+a \quad b 1个中文字符的宽度\\
+a b\\
+a \qquad b  2个中文字符的宽度\\
+a\ b 1/3字符宽度\\
+
+%脚注
+西游记\footnote{中国古典四大名著之一}小说开头写道：
+
+%引用
+\begin{quote}
+{\kaishu 东胜神洲有一花果山，山顶一石，受日月精华，生出一石猴。之后因为成功闯入水帘洞，被花果山诸猴拜为“美猴王”。}
+\end{quote}
+
+%公式
+\begin{equation}
+    z=x+y
+    \label{eq1}
+\end{equation}
+
+%
+
+%字体
+{\songti 宋体} {\heiti 黑体} {\fangsong 仿宋} {\kaishu 楷书}
+{\bf 粗体} {\it 斜体} {\sl 斜体}
+
+%大小
+{\tiny Hello}\\
+{\scriptsize Hello}\\
+{\footnotesize Hello}\\
+{\small Hello}\\
+{\normalsize Hello}\\
+{\large Hello}\\
+{\large \songti 大号宋体}
+
+%字体颜色
+\textcolor{green}{绿色}
+\color{orange}{橙色}
+\textcolor[rgb]{0,1,0}{绿色}
+\color[rgb]{1,0,0}{红色}
+
+%使用底色
+\colorbox{red}{\color{black}{红底黑字}}
+\fcolorbox{red}{green}{红框绿底}
+
+%超级链接
+\url{www.baidu.com}\\
+\href{www.baidu.com}{超级链接的外显内容}
+
+%带有缩进的黑点
+\begin{itemize}
+\item[$\bullet$] We present..
+\item[$\bullet$] We...
+\item[$\bullet$] We ...
+\end{itemize}
+
+%插入图片
+%插入一张图片
+\begin{figure}[htbp] %代表图片的插入位置h:当前位置，t页面顶部，b页面底部，p浮动页
+    \centering    %图片居中
+    \includegraphics[width=6cm]{image.png}  %[可选参数设置图片的宽高]
+    \caption{图片的小标题}    %图片标题
+    \label{pic1}        %图片标签
+\end{figure}
+
+\newpage
+{新的一页插入图片新的一页插入图片}\\
+
+%插入并排的两张共用标题的图片
+\begin{figure}[htbp]
+    \centering 
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{image.png}
+        \caption{子图1}
+        \label{fig:subfig1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{image.png}
+        \caption{子图2}
+        \label{fig:subfig2}
+    \end{subfigure}
+
+    \caption{并排子图}
+    \label{fig:subfigures}
+\end{figure}
+
+%插入并排的两张分别有各自标题的图片
+\begin{figure}[htbp]
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=5.5cm,height=3.5cm]{image.png}
+        \caption{第一张图片的图题}
+    \end{minipage}
+    \begin{minipage}[t]{0.45\linewidth}        %图片占用一行宽度的45%
+        \hspace{10pt}
+        \includegraphics[width=5.5cm,height=3.5cm]{image.png}
+        \caption{第二章图片的图题}
+    \end{minipage}
+\end{figure}
+
+%插入四张并排的图片
+\begin{figure}[htbp]
+    \centering
+    {\includegraphics[width=2.5cm]{image.png}}
+    \hspace{10pt}    %每张图片水平距离
+    {\includegraphics[width=2.5cm]{image.png}}
+    \hspace{10pt}
+    {\includegraphics[width=2.5cm]{image.png}}
+    \hspace{10pt}
+    {\includegraphics[width=2.5cm]{image.png}}
+    \hspace{10pt}
+    \caption{并排插入4张图片}
+\end{figure}
+    
+%竖排插入多张图片
+\begin{figure}[htbp]
+    \centering
+    \subfloat[并排图片1]{
+        \includegraphics[width=4cm]{image.png}}\\
+    \subfloat[并排图片2]{
+        \includegraphics[width=4cm]{image.png}}
+    \caption{title}
+    \label{fig_6}
+\end{figure}
+
+%四个图片四宫格排列
+\begin{figure}[htbp]
+    \centering
+    \subfloat[四宫格左上图片]{
+            \includegraphics[width=4cm]{image.png}}
+    \subfloat[四宫格右上图片]{
+            \includegraphics[width=4cm]{image.png}}\\
+    \subfloat[四宫格左下图片]{
+            \includegraphics[width=4cm]{image.png}}
+    \subfloat[四宫格右下图片]{
+            \includegraphics[width=4cm]{image.png}}
+    \caption{title}
+    \label{fig_7}
+\end{figure}
+
+%插入表格,https://www.tablesgenerator.com/网站生成
+\begin{table}[]
+    \begin{tabular}{|lllllllll|}
+    \hline
+    \multicolumn{9}{|l|}{latex示例表格}                                                                                                                                                                                             \\ \hline
+    \multicolumn{1}{|l|}{1} & \multicolumn{1}{l|}{2}   & \multicolumn{1}{l|}{3}             & \multicolumn{1}{l|}{4}    & \multicolumn{1}{l|}{5} & \multicolumn{1}{l|}{6} & \multicolumn{1}{l|}{7} & \multicolumn{1}{l|}{8} & 9 \\ \hline
+    \multicolumn{1}{|l|}{2} & \multicolumn{1}{l|}{赵伯俣} & \multicolumn{1}{l|}{2021302181156} & \multicolumn{1}{l|}{\makecell{信息\\安全}} & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \multicolumn{1}{|l|}{3} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}     & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \multicolumn{1}{|l|}{4} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}     & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \multicolumn{1}{|l|}{5} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}     & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \multicolumn{1}{|l|}{6} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}     & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \multicolumn{1}{|l|}{7} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}     & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \multicolumn{1}{|l|}{8} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{}     & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}  &   \\ \hline
+    \end{tabular}
+\end{table}
+    
+%代码块
+\newpage
+\section{C Language}
+\begin{lstlisting}[language=c]
+    #include<stdio.h>
+
+    //main function
+    int main()
+    {
+        printf("Hello World!");
+        return 0;
+    }
+
+\end{lstlisting}
+
+% 正文结束
+\end{document}

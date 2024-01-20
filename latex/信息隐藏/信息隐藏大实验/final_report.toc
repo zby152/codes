@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {一、\nobreakspace {}}项目介绍}{1}{}%
+\contentsline {subsection}{\numberline {（一）}项目内容}{1}{}%
+\contentsline {subsection}{\numberline {（二）}预期目标}{1}{}%
+\contentsline {subsection}{\numberline {（三）}小组成员及分工}{2}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}张斌龙}{2}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}赵伯俣}{2}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}刘竞优}{2}{}%
+\contentsline {section}{\numberline {二、\nobreakspace {}}相关背景}{2}{}%
+\contentsline {section}{\numberline {三、\nobreakspace {}}项目内容}{3}{}%
+\contentsline {subsection}{\numberline {（一）}主要框架}{3}{}%
+\contentsline {subsection}{\numberline {（二）}数据预处理}{3}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}数据清洗}{3}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}提取主体数据字典}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}数据提取结果}{4}{}%
+\contentsline {subsection}{\numberline {（三）}构建keywords}{6}{}%
+\contentsline {subsection}{\numberline {（四）}构建模块}{6}{}%
+\contentsline {subsection}{\numberline {（五）}隐写核心}{6}{}%
+\contentsline {subsection}{\numberline {（六）}结果评估}{7}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}计算相似度}{7}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}评估文本质量}{7}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}计算句子困惑度}{7}{}%
+\contentsline {subsubsection}{\numberline {3.6.4}计算平均比特数}{8}{}%
+\contentsline {subsubsection}{\numberline {3.6.5}计算文本多样性}{8}{}%
+\contentsline {section}{\numberline {四、\nobreakspace {}}项目成果}{8}{}%
+\contentsline {subsection}{\numberline {（一）}最终成果}{8}{}%
+\contentsline {subsection}{\numberline {（二）}代码结构}{10}{}%
+\contentsline {subsection}{\numberline {（三）}性能评估}{11}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}预期目标}{11}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}编码方式}{12}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}隐写方式}{13}{}%
+\contentsline {subsection}{\numberline {（四）}局限性}{13}{}%
+\contentsline {section}{\numberline {五、\nobreakspace {}}总结及展望}{15}{}%
+\contentsline {subsection}{\numberline {（一）}总结}{15}{}%
+\contentsline {subsection}{\numberline {（二）}展望}{15}{}%
