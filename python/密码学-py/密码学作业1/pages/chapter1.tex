@@ -1,0 +1,48 @@
+\section{vigenere密码的加密程序}
+以下将介绍使用vigenere密码的加密程序将一段明文加密成相应的密文
+
+\subsection{编写思路}
+    首先将明文中的空格去掉,只保留明文中的字母,然后利用vigenere的方法将明文的下标与密文的下标相加之后模除26即可得到密文的下标,
+    将密文输出即可。
+
+\subsection{源代码}
+    \lstinputlisting[language=Python, caption=vigenere加密程序代码]{codes/vigenere1.py}
+
+\newpage
+\subsection{结果演示}
+    \subsubsection{加密过程1}
+        明文为:I am alive here, my beloved, for the reason to adore you. Oh!How anxious I have been 
+        for you and how sorry I am about all you must have suffered in having no news from us. May 
+        heaven grant that this letter reaches you. Do not write to me, this would compromise all of 
+        us and above all,do not return under any circumstances. It is known that it was you who helped 
+        us to get away from here and all would be lost if you should show yourself.We are guarded day 
+        and night. I do not care you are not here. Do not be troubled on my account. Nothing will happen
+        to me. The national assemble will show leniency. Farewell the most loved of men. Be quiet if you
+        can take care of yourself.For myself I cannot write any more, but nothing in the world could 
+        stop me to adore you up to the death.\\
+        密钥为:hongye\\
+        得到的密文如下图所示
+        \begin{figure}[htbp] %代表图片的插入位置h:当前位置，t页面顶部，b页面底部，p浮动页
+            \centering    %图片居中
+            \includegraphics[width=18cm]{images/vigenere_result_1.png}  %[可选参数设置图片的宽高]
+            \caption{加密程序运行结果1}    %图片标题
+            \label{pic1}        %图片标签
+        \end{figure}
+
+    \subsubsection{加密过程2}
+        明文为:It was the best of times.It was the worst of times. It was the age of wisdom. It was the 
+        age offoolishness. It was the epoch of belief. It was the epoch of incredulity. It was the season
+        of light. It was the season of darkness. It was the spring of hope. It was the winter of despair.
+        We had everything before us. We had nothing before us. We were all going direct to heaven. We were 
+        all going direct the other way. In short, the period was so, far like the present period, that some 
+        of its noisiest authorities insisted on its being received, for good or for evil, in the superlative 
+        degree of comparison only.\\
+        密钥为:hongye\\
+        得到的密文如下图所示
+        \begin{figure}[htbp] %代表图片的插入位置h:当前位置，t页面顶部，b页面底部，p浮动页
+            \centering    %图片居中
+            \includegraphics[width=18cm]{images/vigenere_result_2.png}  %[可选参数设置图片的宽高]
+            \caption{加密程序运行结果2}    %图片标题
+            \label{pic1}        %图片标签
+        \end{figure}
+    

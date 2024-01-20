@@ -1,0 +1,58 @@
+\documentclass[onecolumn]{article} % article 文档类型
+
+\usepackage[UTF8]{ctex}  % 使用宏包(为了能够显示汉字)
+
+%代码块宏包
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+%设置文章标题
+\title{密码学作业1}  % 文章标题
+\author{赵伯俣2021302181156}   % 作者的名称
+\date{\today}       % 当天日期
+
+\usepackage[a4paper,left=10mm,right=10mm,top=15mm,bottom=15mm]{geometry}
+
+%插入图片的宏包
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+
+\begin{document}
+%%----------- 主体部分 ----------- %%
+
+\maketitle
+\include{pages/chapter1}
+
+\include{pages/chapter2}
+
+\include{pages/chapter3}
+
+\end{document}
